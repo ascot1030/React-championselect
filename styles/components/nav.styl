@@ -1,0 +1,29 @@
+@import '../base/constants'
+
+.cs-nav
+  padding-top 1rem
+  padding-bottom 0.75rem
+  white-space nowrap
+
+  h4
+    margin-bottom 0.5rem
+
+    @media (min-width: Breakpoints.LG)
+      margin-bottom 0
+
+  // slightly re-position the logo
+  img
+    position relative
+    top -2px
+    margin-right 0.5rem
+
+.cs-nav-links
+  min-width 20rem
+  overflow hidden
+  display none
+
+  @media (min-width: Breakpoints.LG)
+    display inline-block
+
+.cs-nav-lg-down
+  z-index 1

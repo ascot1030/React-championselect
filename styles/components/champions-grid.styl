@@ -1,0 +1,31 @@
+@import '../base/constants'
+
+.cs-champions-grid
+  margin-bottom 1rem
+
+  @media (min-width: Breakpoints.LG)
+    margin-bottom 0
+
+.cs-champions-grid-cell
+  position relative
+  margin-bottom 35%
+
+borderRadius = 4px
+verticalPadding = 1px
+
+.cs-champions-grid-overlay
+  padding-top verticalPadding
+  padding-bottom verticalPadding
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  text-align center
+  background-color rgba(0, 0, 0, 0.75)
+  font-size 0.75rem
+  color #fff
+  border-bottom-left-radius borderRadius
+  border-bottom-right-radius borderRadius
+
+  @media (min-width: Breakpoints.LG)
+    font-size 0.875rem
